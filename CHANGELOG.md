@@ -5,6 +5,12 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## 3.2.0
+
+### Changed
+- Forked.
+- Implemented fix for issue #323 from original project: Deprecated: Return type php 8 #323
+
 ## 3.1.1
 
 ### Changed
