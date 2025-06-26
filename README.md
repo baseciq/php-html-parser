@@ -1,11 +1,9 @@
 PHP Html Parser
 ==========================
 
-[![Build Status](https://travis-ci.org/paquettg/php-html-parser.png)](https://travis-ci.org/paquettg/php-html-parser)
-[![Coverage Status](https://coveralls.io/repos/paquettg/php-html-parser/badge.png)](https://coveralls.io/r/paquettg/php-html-parser)
-[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/paquettg/php-html-parser/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/paquettg/php-html-parser/?branch=master)
-
 PHPHtmlParser is a simple, flexible, html parser which allows you to select tags using any css selector, like jQuery. The goal is to assist in the development of tools which require a quick, easy way to scrap html, whether it's valid or not!
+
+Due to being abandoned by the original developer, I have decided to fork it and maintain minimal functionality of this library in light of ongoing changes in the PHP language.
 
 Install
 -------
@@ -13,10 +11,10 @@ Install
 Install the latest version using composer.
 
 ```bash
-$ composer require paquettg/php-html-parser
+$ composer require baseciq/php-html-parser
 ```
 
-This package can be found on [packagist](https://packagist.org/packages/paquettg/php-html-parser) and is best loaded using [composer](http://getcomposer.org/). We support php 7.2, 7.3, and 7.4.
+This package can be found on [packagist](https://packagist.org/packages/baseciq/php-html-parser) and is best loaded using [composer](http://getcomposer.org/). We support php 7.2, 7.3, and 7.4.
 
 Basic Usage
 -----
@@ -35,13 +33,6 @@ echo $a->text; // "click here"
 ```
 
 The above will output "click here". Simple, no? There are many ways to get the same result from the DOM, such as `$dom->getElementsbyTag('a')[0]` or `$dom->find('a', 0)`, which can all be found in the tests or in the code itself.
-
-Support PHP Html Parser Financially
---------------
-
-Get supported Monolog and help fund the project with the [Tidelift Subscription](https://tidelift.com/subscription/pkg/packagist-paquettg-php-html-parser?utm_source=packagist-paquettg-php-html-parser&utm_medium=referral&utm_campaign=enterprise).
-
-Tidelift delivers commercial support and maintenance for the open source dependencies you use to build your applications. Save time, reduce risk, and improve code health, while paying the maintainers of the exact dependencies you use.
 
 Loading Files
 ------------------
