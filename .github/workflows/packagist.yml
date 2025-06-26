@@ -1,0 +1,19 @@
+name: Packagist Auto Update
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  update-packagist:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Notify Packagist
+        env:
+          PACKAGIST_TOKEN: ${{ secrets.PACKAGIST_TOKEN }}
+        run: |
+          curl -XPOST \
+            -H "Content-Type: application/json" \
+            -d "{\"repository\":{\"url\":\"https://github.com/${{ github.repository }}\"},\"token\":\"${PACKAGIST_TOKEN}\"}" \
+            "https://packagist.org/api/update-package?username=baseciq"
